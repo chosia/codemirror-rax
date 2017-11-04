@@ -1,0 +1,21 @@
+<html>
+<!-- Create a simple CodeMirror instance -->
+<link rel="stylesheet" href="/Users/chosia/codersco/software/codemirror-5.31.0/lib/codemirror.css">
+<script src="/Users/chosia/codersco/software/codemirror-5.31.0/lib/codemirror.js"></script>
+<script src="/Users/chosia/codersco/software/codemirror-5.31.0/addon/mode/simple.js"></script>
+<script src="rax-mode.js"></script>
+<!-- <script src="../mode/javascript/javascript.js"></script> -->
+<body>
+<script>
+var myCodeMirror = CodeMirror(document.body, {
+  value: "%sql on;\n" +
+         "`print {1..10};\n" +
+         "{#} : alamakota := select [.#1 >= 10 + 14] alamakota;\n" +
+         "alamakota := fold [.ola, /sum(.ala)] olamapsa;\n" +
+         "`log \"Ala ma kota\";\n" +
+         "%sql $ \"select * from alamakota\";\n",
+  mode:  "rax"
+});
+</script>
+</body>
+</html>
