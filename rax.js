@@ -24,7 +24,7 @@ CodeMirror.defineSimpleMode("rax", {
     {regex: /[\{\}\[\]\(\)]/, token: "bracket"},
     {regex: /[\{\[\(]/, indent: true},
     {regex: /[\}\]\)]/, dedent: true},
-    {regex: /[a-z$][\w$]*/, token: "variable-2"},
+    {regex: /[a-z$][\w$]*/, token: "variable"},
     {regex: /%(help|csv|epsilon|digits|raxpath|include|logfile|missing|order|outfile|remove|sql|symtab|time|tree|warn)/, token: "tag"},
     {regex: /%sql $ "/, token: "meta", mode: {spec: "sql", end: /"/}}
   ],
